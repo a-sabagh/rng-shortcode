@@ -36,7 +36,8 @@ class init {
     */
     public function admin_enqueue_scripts($hook){
         if($hook == 'post-new.php' || $hook == 'post.php'){
-            wp_enqueue_script('dl-box-shortcode-scripts',PDU . "admin/assets/css/style.css");
+            wp_enqueue_style('dl-box-shortcode-style',PDU . "admin/assets/css/style.css");
+            wp_enqueue_script('dl-box-shortcode-scripts',PDU . "admin/assets/js/scripts.js",array("jquery"),$this->version,TRUE);
         }
     }
     /**
