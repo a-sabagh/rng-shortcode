@@ -1,11 +1,11 @@
 <?php
-namespace rng\dlbox;
+namespace rng\shortcodes;
 
 if (!defined('ABSPATH')) {
     exit; // Exit if accessed directly.
 }
 
-class dlbox {
+class shortcode {
     public function __construct(){
     	add_action("media_buttons",array($this,"add_shortcode_button"));
 		add_action("admin_footer-post.php",array($this,"shortcode_content_options"));
@@ -15,12 +15,12 @@ class dlbox {
         add_shortcode("rng_download_list_buttons",array($this,"download_list_buttons_shortcode"));
     }
     public function add_shortcode_button(){
-    	echo '<a href="#" class="button"><span class="dashicons dashicons-editor-code"></span><span>'. esc_html__('Add Shortcode','rng-dlbox') .'</span></a>';
+    	echo '<a href="#" class="button"><span class="dashicons dashicons-editor-code"></span><span>'. esc_html__('Add Shortcode','rng-shortcodes') .'</span></a>';
     }
     public function localize_shortcode_translate($hook) {
         $translates = array();
         if($hook == 'post-new.php' || $hook == 'post.php'){
-            wp_localize_script("dl-box-shortcode-scripts","translates",$translates);
+            wp_localize_script("shc-box-shortcode-scripts","translates",$translates);
         }
     }
     public function content_shortcode_options(){}
@@ -28,4 +28,4 @@ class dlbox {
     public function download_list_buttons_shortcode(){}
 }
 
-new dlbox();
+new shortcode();
