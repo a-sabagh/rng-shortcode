@@ -1,0 +1,108 @@
+/*******************  I C O N F O N T  *******************/
+@font-face {
+    font-family: 'icomoon';
+    src:  url('fonts/icomoon.eot?7vg8ky');
+    src:  url('fonts/icomoon.eot?7vg8ky#iefix') format('embedded-opentype'),
+        url('fonts/icomoon.ttf?7vg8ky') format('truetype'),
+        url('fonts/icomoon.woff?7vg8ky') format('woff'),
+        url('fonts/icomoon.svg?7vg8ky#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-books:before {
+    content: "\e920";
+}
+.icon-file-text:before {
+    content: "\e922";
+}
+.icon-folder:before {
+    content: "\e92f";
+}
+.icon-box-add:before {
+    content: "\e95e";
+}
+.icon-spinner3:before {
+    content: "\e97c";
+}
+.icon-list2:before {
+    content: "\e9bb";
+}
+.icon-download3:before {
+    content: "\e9c7";
+}
+.icon-checkbox-checked:before {
+    content: "\ea52";
+}
+.icon-checkbox-unchecked:before {
+    content: "\ea53";
+}
+/*******************  G R I D *******************/
+.shc-row:before,
+.shc-row:after {
+    display: table;
+    content: " ";
+}
+.shc-row:after {
+    clear: both;
+}
+.shc-col-3,
+.shc-col-9,
+.shoc-col-12{
+    position: relative;
+    min-height: 1px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+@media (min-width: 768px) {
+    .shc-col-3,
+    .shc-col-9{ 
+        float: left;
+        box-sizing: border-box;
+    }
+    .shc-col-12{
+        width: 100%;
+    }
+    .shc-col-3{
+        width: 25%;
+    }
+    .shc-col-9{
+        width: 75%;
+    }
+}
+/*******************  S T Y L E *******************/
+.shc-row .shc-btn-download{
+    transition: all .4s;
+    padding: 6px 20px;
+    border: 1px solid #aaaaaa;
+    background: transparent;
+    font-weight: normal;
+    color: inherit;
+    color: #444444;
+    font-weight: normal;
+    margin: 5px;
+    border-radius: 5px;
+    box-shadow: none;
+}
+.shc-row .shc-btn-download:hover{
+    box-shadow: none;
+    text-decoration: none;
+}
+.shc-row .shc-btn-download .icon-download3{
+    margin-right: 3px;
+}

@@ -29,7 +29,7 @@ if (!function_exists("shc_locate_template")) {
         if (!$template_path)
             $template_path = "rng-shortcodes/";
         if (!$default_path)
-            $default_path = PDP . "templates/";
+            $default_path = SHC_PDP . "templates/";
         $template = locate_template(array($template_path . $template_name, $template_name));
         if (empty($template))
             $template = $default_path . $template_name;

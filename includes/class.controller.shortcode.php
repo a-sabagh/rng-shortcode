@@ -23,11 +23,10 @@ class shortcode {
 
     public function localize_shortcode_translate($hook) {
         $translates = array(
-            'heading' => esc_html__("Download item","rng-shortcodes"),
-            'title' => esc_html__("Title","rng-shortcodes"),
-            'link' => esc_html__("Link","rng-shortcodes"),
-            'description' => esc_html__("Description","rng-shortcodes"),
-            
+            'heading' => esc_html__("Download item", "rng-shortcodes"),
+            'title' => esc_html__("Title", "rng-shortcodes"),
+            'link' => esc_html__("Link", "rng-shortcodes"),
+            'description' => esc_html__("Description", "rng-shortcodes"),
         );
         if ($hook == 'post-new.php' || $hook == 'post.php') {
             wp_localize_script("shc-box-shortcode-scripts", "TRANSLATES", $translates);
@@ -38,8 +37,13 @@ class shortcode {
         require_once SHC_ADM . "shortcode-options.php";
     }
 
-    public function download_button_shortcode() {
-        
+    public function download_button_shortcode($atts) {
+        //ATTRIBUTE
+        $array_atts = shortcode_atts( array( 'title' => '', 'link' => '#', 'description' => '' ), $atts, 'rng_download_button' );
+        ob_start();
+        shc_get_template("download-button.php",$array_atts);
+        $output = ob_get_clean();
+        return $output;
     }
 
     public function download_list_buttons_shortcode() {
