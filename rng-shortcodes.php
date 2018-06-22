@@ -13,13 +13,13 @@ namespace rng\shortcodes;
 if (!defined('ABSPATH')) {
     exit; // Exit if accessed directly.
 }
-define(FILE, __FILE__);
-define(PRU, plugin_basename(__FILE__));
-define(PDU, plugin_dir_url(__FILE__));   //http://localhost:8888/rng-plugin/wp-content/plugins/rng-shortcodes/
-define(PRT, basename(__DIR__));          //rng-dlbox.php
-define(PDP, plugin_dir_path(__FILE__));  //Applications/MAMP/htdocs/rng-plugin/wp-content/plugins/rng-shortcodes
-define(TMP, PDP . "/public/");           //view OR templates directory for public 
-define(ADM, PDP . "/admin/");            //view OR templates directory for admin panel
+define(SHC_FILE, __FILE__);
+define(SHC_PRU, plugin_basename(__FILE__));
+define(SHC_PDU, plugin_dir_url(__FILE__));   //http://localhost:8888/rng-plugin/wp-content/plugins/rng-shortcodes/
+define(SHC_PRT, basename(__DIR__));          //rng-dlbox.php
+define(SHC_PDP, plugin_dir_path(__FILE__));  //Applications/MAMP/htdocs/rng-plugin/wp-content/plugins/rng-shortcodes
+define(SHC_TMP, SHC_PDP . "public/");           //view OR templates directory for public 
+define(SHC_ADM, SHC_PDP . "admin/");            //view OR templates directory for admin panel
 /*
  * locate_template
  */
