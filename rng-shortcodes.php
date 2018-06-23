@@ -58,4 +58,4 @@ if (!function_exists("shc_get_template")) {
 }
 
 require_once 'includes/class.init.php';
-$rng_shcbox = new init(1.0,"rng-shortcodes");
+$rng_shcbox = new init(0.1,"rng-shortcodes");
