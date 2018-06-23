@@ -1,6 +1,6 @@
 <?php
 /*
-  Plugin Name: RNG_shortcodes
+  Plugin Name: RNG_Shortcodes
   Description: wordpress plugin customer tinymce by adding button for generating shortcode
   Version: 1.0
   Author: abolfazl sabagh
