@@ -52,41 +52,8 @@
 .icon-checkbox-unchecked:before {
     content: "\ea53";
 }
-/*******************  G R I D *******************/
-.shc-row:before,
-.shc-row:after {
-    display: table;
-    content: " ";
-}
-.shc-row:after {
-    clear: both;
-}
-.shc-col-3,
-.shc-col-9,
-.shoc-col-12{
-    position: relative;
-    min-height: 1px;
-    padding-left: 5px;
-    padding-right: 5px;
-}
-@media (min-width: 768px) {
-    .shc-col-3,
-    .shc-col-9{ 
-        float: left;
-        box-sizing: border-box;
-    }
-    .shc-col-12{
-        width: 100%;
-    }
-    .shc-col-3{
-        width: 25%;
-    }
-    .shc-col-9{
-        width: 75%;
-    }
-}
 /*******************  S T Y L E *******************/
-.shc-row .shc-btn-download{
+.shc-download-button .shc-btn-download{
     transition: all .4s;
     padding: 6px 20px;
     border: 1px solid #aaaaaa;
@@ -99,15 +66,16 @@
     border-radius: 5px;
     box-shadow: none;
 }
-.shc-row .shc-btn-download:hover{
+.shc-download-button .shc-btn-download:hover{
     box-shadow: none;
     text-decoration: none;
 }
 .shc-download-list-btn .icon-download3,
-.shc-row .shc-btn-download .icon-download3{
+.shc-download-button .shc-btn-download .icon-download3{
     margin-right: 5px;
 }
-.shc-download-list-description {
+.shc-download-list-description,
+.shc-download-button-description{
     display: inline-block;
     margin: 0 10px;
 }
