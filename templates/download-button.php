@@ -8,7 +8,7 @@
  */
 ?>
 <div class="shc-download-button">
-    <a class="shc-btn-download" href="<?php echo esc_url($link); ?>" download="<?php echo esc_attr($title); ?>" title="<?php echo esc_attr($title); ?>"><i class="icon-download3"></i><?php esc_html_e("Download", "rng-shortcodes"); ?></a>
+    <a class="shc-btn-download" href="<?php echo esc_url($link); ?>" download="<?php echo esc_attr($title); ?>" title="<?php echo esc_attr($title); ?>"><i class="shc-icon-download3"></i><?php esc_html_e("Download", "rng-shortcodes"); ?></a>
     <?php if (!empty($description)) { ?>
         <p class="shc-download-button-description"><?php echo esc_html($description); ?></p>
     <?php } ?>

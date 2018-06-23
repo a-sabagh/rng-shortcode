@@ -10,7 +10,7 @@
     font-style: normal;
 }
 
-[class^="icon-"], [class*=" icon-"] {
+[class^="shc-icon-"], [class*=" shc-icon-"] {
     /* use !important to prevent issues with browser extensions that change fonts */
     font-family: 'icomoon' !important;
     speak: none;
@@ -25,31 +25,31 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-books:before {
+.shc-icon-books:before {
     content: "\e920";
 }
-.icon-file-text:before {
+.shc-icon-file-text:before {
     content: "\e922";
 }
-.icon-folder:before {
+.shc-icon-folder:before {
     content: "\e92f";
 }
-.icon-box-add:before {
+.shc-icon-box-add:before {
     content: "\e95e";
 }
-.icon-spinner3:before {
+.shc-icon-spinner3:before {
     content: "\e97c";
 }
-.icon-list2:before {
+.shc-icon-list2:before {
     content: "\e9bb";
 }
-.icon-download3:before {
+.shc-icon-download3:before {
     content: "\e9c7";
 }
-.icon-checkbox-checked:before {
+.shc-icon-checkbox-checked:before {
     content: "\ea52";
 }
-.icon-checkbox-unchecked:before {
+.shc-icon-checkbox-unchecked:before {
     content: "\ea53";
 }
 /*******************  S T Y L E *******************/
@@ -70,8 +70,8 @@
     box-shadow: none;
     text-decoration: none;
 }
-.shc-download-list-btn .icon-download3,
-.shc-download-button .shc-btn-download .icon-download3{
+.shc-download-list-btn .shc-icon-download3,
+.shc-download-button .shc-btn-download .shc-icon-download3{
     margin-left: 5px;
 }
 .shc-download-list-description,
