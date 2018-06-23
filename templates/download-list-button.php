@@ -1,4 +1,11 @@
 <?php 
+/**
+ * The template for displaying output of download list shortcode
+ * This template can be overridden by copying it to yourtheme/rng-shortcodes/download-list-button.php.
+ * @author  Abolfazl Sabagh
+ * @package rng-shortcode/Templates
+ * @version 0.1
+ */
 $titles = explode(",",$titles);
 $links = explode(",",$links);
 $descriptions = explode(",",$descriptions);
