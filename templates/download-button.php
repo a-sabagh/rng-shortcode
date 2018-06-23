@@ -6,6 +6,9 @@
  * @package rng-shortcode/Templates
  * @version 0.1
  */
+if (!defined('ABSPATH')) {
+    exit; // Exit if accessed directly.
+}
 ?>
 <div class="shc-download-button">
     <a class="shc-btn-download" href="<?php echo esc_url($link); ?>" download="<?php echo esc_attr($title); ?>" title="<?php echo esc_attr($title); ?>"><i class="shc-icon-download3"></i><?php esc_html_e("Download", "rng-shortcodes"); ?></a>

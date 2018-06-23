@@ -1,3 +1,14 @@
+<?php 
+/**
+ * Shortcode Options
+ * @author  Abolfazl Sabagh
+ * @package rng-shortcode/Admin
+ * @version 0.1
+ */
+if (!defined('ABSPATH')) {
+    exit; // Exit if accessed directly.
+}
+?>
 <div id="myModal" class="modal">
     <!-- Modal content -->
     <div class="modal-content">

@@ -6,6 +6,9 @@
  * @package rng-shortcode/Templates
  * @version 0.1
  */
+if (!defined('ABSPATH')) {
+    exit; // Exit if accessed directly.
+}
 $titles = explode(",",$titles);
 $links = explode(",",$links);
 $descriptions = explode(",",$descriptions);
