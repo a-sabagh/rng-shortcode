@@ -53,6 +53,9 @@
     content: "\ea53";
 }
 /*******************  S T Y L E *******************/
+.shc-download-button {
+    margin: 15px 0;
+}
 .shc-download-button .shc-btn-download{
     transition: all .4s;
     padding: 6px 20px;
