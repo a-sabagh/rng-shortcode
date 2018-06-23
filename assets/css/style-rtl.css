@@ -66,13 +66,13 @@
 .shoc-col-12{
     position: relative;
     min-height: 1px;
-    padding-left: 5px;
     padding-right: 5px;
+    padding-left: 5px;
 }
 @media (min-width: 768px) {
     .shc-col-3,
     .shc-col-9{ 
-        float: left;
+        float: right;
         box-sizing: border-box;
     }
     .shc-col-12{
@@ -105,7 +105,7 @@
 }
 .shc-download-list-btn .icon-download3,
 .shc-row .shc-btn-download .icon-download3{
-    margin-right: 5px;
+    margin-left: 5px;
 }
 .shc-download-list-description {
     display: inline-block;
@@ -115,8 +115,8 @@
     list-style: none;
 }
 .shc-download-list {
-    padding-left: 15px;
+    padding-right: 15px;
 }
 .shc-download-list-wrapper {
-    border-left: 2px solid #cbcbcb;
+    border-right: 2px solid #cbcbcb;
 }

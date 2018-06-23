@@ -29,14 +29,22 @@ class init {
     * adding dlbox public scripts
     */
     public function public_enqueue_scripts() {
-        wp_enqueue_style("shc-box-stylesheet",SHC_PDU . "assets/css/style.css");
+        if(is_rtl()){
+            wp_enqueue_style("shc-box-stylesheet-rtl",SHC_PDU . "assets/css/style-rtl.css");
+        }else{
+            wp_enqueue_style("shc-box-stylesheet",SHC_PDU . "assets/css/style.css");
+        }
     }
     /**
     * adding admin enqueue scripts
     */
     public function admin_enqueue_scripts($hook){
         if($hook == 'post-new.php' || $hook == 'post.php'){
-            wp_enqueue_style('shc-box-shortcode-style',SHC_PDU . "admin/assets/css/style.css");
+            if(is_rtl()){
+                wp_enqueue_style('shc-box-shortcode-style-rtl',SHC_PDU . "admin/assets/css/style-rtl.css");
+            }  else {
+                wp_enqueue_style('shc-box-shortcode-style',SHC_PDU . "admin/assets/css/style.css");
+            }
             wp_enqueue_script('shc-box-shortcode-scripts',SHC_PDU . "admin/assets/js/scripts.js",array("jquery"),$this->version,TRUE);
         }
     }
